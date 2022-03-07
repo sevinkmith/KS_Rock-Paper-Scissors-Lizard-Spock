@@ -1,7 +1,13 @@
-const gameGrid = document.getElementById('game-area')
-const userChoice = document.createElement('h2')
-const pcChoice = document.createElement('h2')
-const result = document.createElement('h2')
-gameGrid.append(userChoice, pcChoice, result)
+const pcChoiceDisplay = document.getElementById('pc-choice')
+const userChoiceDisplay = document.getElementById('user-choice')
+const resultDisplay = document.getElementById('result')
+const possibleChoices = document.getElementsByClassName('button')
 
-const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
+let userChoice
+
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    userChoice = e.target.id
+    userChoiceDisplay.innerHTML = userChoice
+    generateComputerChoice()
+    getResult() 
+}))
