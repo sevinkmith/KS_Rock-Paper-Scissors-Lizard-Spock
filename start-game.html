@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/9e3a91e4d5.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
     <div class="container">
-        <button id="rock" class="icon">
-            <i class="fa-solid fa-hand-back-fist"></i>
-        </button>
-        <button id="paper" class="icon">
-            <i class="fa-solid fa-hand"></i>
-        </button>
-        <button id="scissors" class="icon">
-            <i class="fa-solid fa-hand-scissors"></i>
-        </button>
-        <button id="lizard" class="icon">
-            <i class="fa-solid fa-hand-lizard"></i>
-        </button>
-        <button id="spock" class="icon">
-            <i class="fa-solid fa-hand-spock"></i>
-        </button>
+        <div class="score=area">
+            <p>Your Score: <span id="user-score"></span>
+            </p>
+            <p>Computer Score: <span id="pc-score"></span>
+            </p>
+        </div>
+        <div>
+            <button id="rock" class="icon">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </button>
+            <button id="paper" class="icon">
+                <i class="fa-solid fa-hand"></i>
+            </button>
+            <button id="scissors" class="icon">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+            <button id="lizard" class="icon">
+                <i class="fa-solid fa-hand-lizard"></i>
+            </button>
+            <button id="spock" class="icon">
+                <i class="fa-solid fa-hand-spock"></i>
+            </button>
+        </div>
     </div>
-    
-    <div id="score-area">
-        
-    </div>
+    <script src="https://kit.fontawesome.com/4646b31310.js" crossorigin="anonymous"></script> 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
