@@ -21,30 +21,30 @@
             </p>
         </div>
         <div class="controls">
-            <button>
+            <button on-click="checker('rock')">
                 <i class="fa-solid fa-hand-back-fist"></i>
             </button>
-            <button>
+            <button on-click="checker('paper')">
                 <i class="fa-solid fa-hand"></i>
             </button>
-            <button>
+            <button on-click="checker('scissors')">
                 <i class="fa-solid fa-hand-scissors"></i>
             </button>
-            <button>
+            <button on-click="checker('lizard')">
                 <i class="fa-solid fa-hand-lizard"></i>
             </button>
-            <button>
+            <button on-click="checker('spock')">
                 <i class="fa-solid fa-hand-spock"></i>
             </button>
         </div>
-        <div class="result-display">
-            <p id="user-score"></p>
-            <p id="pc-score"></p>
+        <div class="details">
+            <p id="user-choice"></p>
+            <p id="pc-choice"></p>
             <p id="result"></p>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/4646b31310.js" crossorigin="anonymous"></script> 
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/4646b31310.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -22,6 +22,8 @@ body {
 .controls {
     margin-bottom: 50px;
     text-align: right;
+    display: flex;
+    justify-content: space-around;
 }
 
 .controls button {
@@ -32,4 +34,16 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.details {
+    margin-top: 30px;
+    text-align: center;
+}
+.results .details {
+	font-family: ITC Avant Garde Gothic,san-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
