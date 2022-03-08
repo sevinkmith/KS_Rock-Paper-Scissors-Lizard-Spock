@@ -18,3 +18,13 @@ body {
     left: 50%;
     border-radius: 10px;
 }
+.score-area {
+	margin-bottom: 500px;
+	text-align: left;
+}
+
+.controls {
+    margin-bottom: 50px;
+    text-align: right;
+}
+
