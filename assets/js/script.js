@@ -8,3 +8,5 @@ function checker(input){
     document.getElementByID("user-choice").
     innerHTML= `You chose <span> ${input.toUpperCase()} </span>`;
 }
+
+checker();
