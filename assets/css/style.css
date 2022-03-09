@@ -19,14 +19,15 @@ body {
 	text-align: left;
 }
 
-.controls {
+.controls-area {
+    margin-top: 50px;
     margin-bottom: 50px;
     text-align: right;
     display: flex;
     justify-content: space-around;
 }
 
-.controls button {
+.controls-area button {
 	background-color: #4424b5;
     color: #000000;
     border: none;
