@@ -39,16 +39,18 @@ let choicesObject = {
 function checker(input){
     var choices = ["rock", "paper", "scissors", "lizard", "spock"];
     var num = Math.floor(Math.random()*5);
+    console.log(num)
+    var pcChoice = document.getElementById("pc-choice");
+    pchoice = choices[num].toUpperCase()
+    pcChoice.innerHTML = `Computer chose <span>${pchoice}</span>`;
 
-    const pcChoice = document.getElementById("pc-choice");
-    pcChoice.innerHTML = `Computer chose <span>${choices[num].toUpperCase()}</span>`;
-
-    const userChoice = document.getElementById("user-choice")
+    var userChoice = document.getElementById("user-choice")
     userChoice.innerHTML= `You chose <span> ${input.toUpperCase()} </span>`;
-}
-pcChoice = choices[num];
+    // pcChoice = choicesObject[num];
+    pchoice = pchoice.toLowerCase();
+    console.log(choicesObject[input][pchoice])
 
-switch(choicesObject[input][pcChoice]) {
+    switch(choicesObject[input][pchoice]) {
     case 'wins':
         resultInfo.innerHTML = "You win!";
         break;
@@ -57,4 +59,6 @@ switch(choicesObject[input][pcChoice]) {
         break;
     default:
         resultInfo.innerHTML = "It's a draw!";
+}
+
 }
