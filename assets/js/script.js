@@ -46,4 +46,15 @@ function checker(input){
     const userChoice = document.getElementById("user-choice")
     userChoice.innerHTML= `You chose <span> ${input.toUpperCase()} </span>`;
 }
-checker();
+pcChoice = choices[num];
+
+switch(choicesObject[input][pcChoice]) {
+    case 'wins':
+        resultInfo.innerHTML = "You win!";
+        break;
+    case 'lose':
+        resultInfo.innerHTML = "You lose!";
+        break;
+    default:
+        resultInfo.innerHTML = "It's a draw!";
+}
