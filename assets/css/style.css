@@ -39,6 +39,11 @@ body {
     cursor: pointer;
 }
 
+.controls-area button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
 .details {
     margin-top: 30px;
     text-align: center;
