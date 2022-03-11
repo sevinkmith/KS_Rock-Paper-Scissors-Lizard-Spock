@@ -15,4 +15,19 @@
 <h3>Validator Testing</h3>
 <li><strong>HTML: </strong>No errors were returned when passing through the official W3C validator.</li>
 <li><strong>CSS: </strong>No errors were found when passing through the official (Jigsaw) validator</li>
-<li><strong>Javascript: </strong></li>
+<li><strong>Javascript: </strong>When I inputted the javascipt to JsJint, there was a couple of missing semi-colons. I corrected these and there was no other errors.</li>
+
+<h3>Testing:</h3>
+<p>I tested the game using Lighthouse to make sure that it performs sufficiently. I also used the inspect tool to make sure that the game is responsive for all devices.</p>
+<img href="assets/images/Lighthouse-check.PNG">
+
+<h3>Deployment</h3>
+<p>he site was deployed to GitHub pages. The steps to deploy are:</p>
+<li>In the GitHub repository, I navigated to the Settings tab.</li>
+<li>From the source section drop-down menu, select the Main Branch.</li>
+<p>The live link can be found here - https://sevinkmith.github.io/KS_Rock-Paper-Scissors-Lizard-Spock/</p>
+
+<h3>Credits</h3>
+<li>I used the Code Institute course content for a lot of the issues I was having.</li>
+<li>I used stack overflow and found it very useful.</li>
+<li>The icons in the footer were taken from Font Awesome.</li>
