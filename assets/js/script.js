@@ -89,7 +89,27 @@ function checker(input){
 }
 
 const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+const lizard = document.getElementById("lizard");
+const spock = document.getElementById("spock");
 
 rock.addEventListener("click", function(){
     checker("rock");
+});
+
+paper.addEventListener("click", function(){
+    checker("paper");
+});
+
+scissors.addEventListener("click", function(){
+    checker("scissors");
+});
+
+lizard.addEventListener("click", function(){
+    checker("lizard");
+});
+
+spock.addEventListener("click", function(){
+    checker("spock");
 });
