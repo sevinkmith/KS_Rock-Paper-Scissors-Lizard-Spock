@@ -68,18 +68,20 @@ function checker(input){
             , 3000);
         }
         break;
-    case 'lose':
-        resultInfo.innerHTML = "You lose!";
-        pcScore++;
-        pc_score_span.innerHTML = pcScore;
-        if (pcScore == 5) {
-            resultInfo.innerHTML = "The PC won the game!";
-            resultInfo.classList.add("lose");
-            setTimeout(function(){
-                location.reload();
-            }, 3000);
-            
-        }
+        case 'lose':
+            resultInfo.innerHTML = "You lose!";
+            pcScore++;
+            pc_score_span.innerHTML = pcScore;
+            if (pcScore == 5) {
+                resultInfo.innerHTML = "The PC won the game!";
+                resultInfo.classList.add("lose");
+                // refresh page
+                setTimeout(function(){
+                    location.reload();
+                }, 3000);
+                
+            }
+            break;
     default:
         resultInfo.innerHTML = "It's a draw!";
 }
