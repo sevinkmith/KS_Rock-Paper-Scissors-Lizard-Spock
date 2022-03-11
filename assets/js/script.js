@@ -1,4 +1,8 @@
 let resultInfo = document.getElementById("result");
+userScore = 0;
+pcScore = 0;
+const user_score_span = document.getElementById("user-score");
+const pc_score_span = document.getElementById("pc-score");
 let choicesObject = {
     'rock' : {
         'rock' : 'draw',
@@ -53,6 +57,16 @@ function checker(input){
     switch(choicesObject[input][pchoice]) {
     case 'wins':
         resultInfo.innerHTML = "You win!";
+        userScore++;
+        user_score_span.innerHTML = userScore;
+        if (userScore == 5) {
+            resultInfo.innerHTML = "You won the game!";
+            resultInfo.classList.add("winner");
+            setTimeout(function(){
+                location.reload();
+            }
+            , 3000);
+        }
         break;
     case 'lose':
         resultInfo.innerHTML = "You lose!";
