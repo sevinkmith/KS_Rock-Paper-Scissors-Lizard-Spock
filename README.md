@@ -8,3 +8,11 @@
 <li>The controls area is in the middle of the page and consists of the five buttons that the user chooses from to play the game.</li>
 <li>The details area displays whether the user or the PC won each individual game.</li>
 </p>
+
+<h3>Features Left to Implement:</h3>
+<p>I would like to add a feature that allows the user to play against another player online.</p>
+
+<h3>Validator Testing</h3>
+<li><strong>HTML: </strong>No errors were returned when passing through the official W3C validator.</li>
+<li><strong>CSS: </strong>No errors were found when passing through the official (Jigsaw) validator</li>
+<li><strong>Javascript: </strong></li>
