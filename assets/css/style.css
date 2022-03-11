@@ -5,11 +5,12 @@ body {
 }
 
 .container {
+    box-sizing: border-box;
     width: 60%;
     min-width: 500px;
     background-color: #ffffff;
     position: absolute;
-    padding: 40px 30px;
+    padding: 30px 30px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -59,9 +60,32 @@ header{
     width: 65%;
     margin: 0 auto;
     color: #ffffff;
+    text-align: center;
 }
 
 .fa-solid{
     font-size: 30px;
     color: #ffffff;
+
+}
+
+#result{
+    color: #4424b5;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#result .winners{
+    color: #4424b5;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#result .lose{
+    color: #b52468;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.5s;
 }
