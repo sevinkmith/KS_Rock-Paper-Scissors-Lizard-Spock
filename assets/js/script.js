@@ -87,3 +87,9 @@ function checker(input){
 }
 
 }
+
+const rock = document.getElementById("rock");
+
+rock.addEventListener("click", function(){
+    checker("rock");
+});
