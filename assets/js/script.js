@@ -70,7 +70,16 @@ function checker(input){
         break;
     case 'lose':
         resultInfo.innerHTML = "You lose!";
-        break;
+        pcScore++;
+        pc_score_span.innerHTML = pcScore;
+        if (pcScore == 5) {
+            resultInfo.innerHTML = "The PC won the game!";
+            resultInfo.classList.add("lose");
+            setTimeout(function(){
+                location.reload();
+            }, 3000);
+            
+        }
     default:
         resultInfo.innerHTML = "It's a draw!";
 }
