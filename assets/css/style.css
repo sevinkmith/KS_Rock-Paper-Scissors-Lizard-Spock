@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     background-color: #4424b5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -52,4 +53,15 @@ body {
 	font-family: ITC Avant Garde Gothic,san-serif;
     font-weight: 400;
     font-size: 15px;
+}
+
+header{
+    width: 65%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.fa-solid{
+    font-size: 30px;
+    color: #ffffff;
 }
